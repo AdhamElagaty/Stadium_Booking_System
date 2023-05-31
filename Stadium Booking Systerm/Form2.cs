@@ -12,17 +12,18 @@ namespace Stadium_Booking_Systerm
 {
     public partial class Form_login : Form
     {
-        private int timer_count = 0;
-        private bool Mouse_r = true;
+        public static Form_login Instance;
+        public string username;
 
         public Form_login()
         {
             InitializeComponent();
+            Instance = this;
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
 
         private void TexteBox_Enter(ref TextBox t)
@@ -95,22 +96,8 @@ namespace Stadium_Booking_Systerm
             }
         }
 
-        private void btnlogin_MouseHover(object sender, EventArgs e)
-        {
-            Mouse_r = false;
-            btnlogin.BackColor = Color.Green;
-        }
-
-        private void btnlogin_MouseLeave(object sender, EventArgs e)
-        {
-            Mouse_r = true;
-            btnlogin.BackColor = Color.FromArgb(210, 255, 210);
-        }
-
         private void btnlogin_Click(object sender, EventArgs e)
         {
-            btnlogin.BackColor = Color.Green;
-            timer1.Enabled = true;
             if (textname.Text != "UserName" && textpass.Text != "Password")
             {
                 Account account = new Account();
@@ -118,13 +105,14 @@ namespace Stadium_Booking_Systerm
                 account.set_UserName_Password(username, password);
                 if (account.login_Check())
                 {
-                    if (account.get_type() == "Admin")
+                    this.username = account.get_UserName();
+                    if (account.get_type() == "Admin" || account.get_type() == "Employee")
                     {
-                        MessageBox.Show("Hi " + account.get_name() + " " + account.get_phone_number());
-                    }
-                    else if (account.get_type() == "Employee")
-                    {
-                        MessageBox.Show("Hi " + account.get_name());
+                        Main_Form form = new Main_Form();
+                        Main_Form.Instance.set_username(username);
+                        this.Visible = false;
+                        form.ShowDialog();
+                        this.Close();
                     }
                 }
                 else
@@ -148,27 +136,6 @@ namespace Stadium_Booking_Systerm
             }
         }
 
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            if (timer_count < 4)
-            {
-                timer_count++;
-            }
-            else
-            {
-                timer_count = 0;
-                timer1.Enabled = false;
-                if (Mouse_r)
-                {
-                    btnlogin.BackColor = Color.FromArgb(210, 255, 210);
-                }
-                else
-                {
-                    return;
-                }
-            }
-        }
-
         private void show_pass_btn_Click(object sender, EventArgs e)
         {
             hide_pass_btn.Visible = true;
@@ -176,12 +143,35 @@ namespace Stadium_Booking_Systerm
             textpass.PasswordChar = '*';
 
         }
-
+        public void Enter_Key(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Return)
+            {
+                btnlogin_Click(sender, e);
+            }
+        }
         private void hide_pass_btn_Click(object sender, EventArgs e)
         {
             hide_pass_btn.Visible = false;
             show_pass_btn.Visible = true;
             textpass.PasswordChar = '\0';
+        }
+
+        private void btn_exite_light_MouseHover(object sender, EventArgs e)
+        {
+            btn_exite_light.Visible = false;
+            btn_exite_dark.Visible = true;
+        }
+
+        private void btn_exite_dark_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btn_exite_dark_MouseLeave(object sender, EventArgs e)
+        {
+            btn_exite_light.Visible = true;
+            btn_exite_dark.Visible = false;
         }
     }
 }

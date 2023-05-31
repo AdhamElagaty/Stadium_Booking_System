@@ -30,32 +30,31 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_login));
-            this.bunifuElipse_form = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.textname = new System.Windows.Forms.TextBox();
             this.textpass = new System.Windows.Forms.TextBox();
             this.btnlogin = new System.Windows.Forms.Button();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.lab_username_err = new System.Windows.Forms.Label();
             this.lab_pass_err = new System.Windows.Forms.Label();
             this.lab_login_error = new System.Windows.Forms.Label();
+            this.bunifuElipse_form = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.bunifuElipse3 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.btn_exite_dark = new System.Windows.Forms.PictureBox();
             this.show_pass_btn = new System.Windows.Forms.PictureBox();
             this.hide_pass_btn = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.btn_exite_light = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_exite_dark)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.show_pass_btn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hide_pass_btn)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_exite_light)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // bunifuElipse_form
-            // 
-            this.bunifuElipse_form.ElipseRadius = 80;
-            this.bunifuElipse_form.TargetControl = this;
             // 
             // textname
             // 
@@ -71,6 +70,7 @@
             this.textname.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textname.WordWrap = false;
             this.textname.Enter += new System.EventHandler(this.textname_Enter);
+            this.textname.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Enter_Key);
             this.textname.Leave += new System.EventHandler(this.textname_Leave);
             // 
             // textpass
@@ -87,14 +87,19 @@
             this.textpass.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textpass.TextAlignChanged += new System.EventHandler(this.textpass_TextAlignChanged);
             this.textpass.Enter += new System.EventHandler(this.textpass_Enter);
+            this.textpass.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Enter_Key);
             this.textpass.Leave += new System.EventHandler(this.textpass_Leave);
             // 
             // btnlogin
             // 
-            this.btnlogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(255)))), ((int)(((byte)(210)))));
+            this.btnlogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(93)))), ((int)(((byte)(68)))));
             this.btnlogin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnlogin.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnlogin.Font = new System.Drawing.Font("Ubuntu", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnlogin.FlatAppearance.BorderSize = 0;
+            this.btnlogin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(139)))), ((int)(((byte)(86)))));
+            this.btnlogin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(139)))), ((int)(((byte)(86)))));
+            this.btnlogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnlogin.Font = new System.Drawing.Font("Plus Jakarta Sans", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnlogin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(228)))), ((int)(((byte)(122)))));
             this.btnlogin.Location = new System.Drawing.Point(531, 459);
             this.btnlogin.Name = "btnlogin";
             this.btnlogin.Size = new System.Drawing.Size(204, 64);
@@ -102,13 +107,6 @@
             this.btnlogin.Text = "Login";
             this.btnlogin.UseVisualStyleBackColor = false;
             this.btnlogin.Click += new System.EventHandler(this.btnlogin_Click);
-            this.btnlogin.MouseLeave += new System.EventHandler(this.btnlogin_MouseLeave);
-            this.btnlogin.MouseHover += new System.EventHandler(this.btnlogin_MouseHover);
-            // 
-            // timer1
-            // 
-            this.timer1.Interval = 50;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // lab_username_err
             // 
@@ -140,10 +138,44 @@
             this.lab_login_error.Size = new System.Drawing.Size(0, 26);
             this.lab_login_error.TabIndex = 28;
             // 
+            // bunifuElipse_form
+            // 
+            this.bunifuElipse_form.ElipseRadius = 80;
+            this.bunifuElipse_form.TargetControl = this;
+            // 
+            // bunifuElipse1
+            // 
+            this.bunifuElipse1.ElipseRadius = 30;
+            this.bunifuElipse1.TargetControl = this.textname;
+            // 
+            // bunifuElipse2
+            // 
+            this.bunifuElipse2.ElipseRadius = 30;
+            this.bunifuElipse2.TargetControl = this.textpass;
+            // 
+            // bunifuElipse3
+            // 
+            this.bunifuElipse3.ElipseRadius = 30;
+            this.bunifuElipse3.TargetControl = this.btnlogin;
+            // 
+            // btn_exite_dark
+            // 
+            this.btn_exite_dark.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_exite_dark.Image = global::Stadium_Booking_Systerm.Properties.Resources.cancel_208px;
+            this.btn_exite_dark.Location = new System.Drawing.Point(855, 12);
+            this.btn_exite_dark.Name = "btn_exite_dark";
+            this.btn_exite_dark.Size = new System.Drawing.Size(40, 40);
+            this.btn_exite_dark.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btn_exite_dark.TabIndex = 31;
+            this.btn_exite_dark.TabStop = false;
+            this.btn_exite_dark.Visible = false;
+            this.btn_exite_dark.Click += new System.EventHandler(this.btn_exite_dark_Click);
+            this.btn_exite_dark.MouseLeave += new System.EventHandler(this.btn_exite_dark_MouseLeave);
+            // 
             // show_pass_btn
             // 
             this.show_pass_btn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.show_pass_btn.Image = global::Stadium_Booking_Systerm.Properties.Resources.Show;
+            this.show_pass_btn.Image = global::Stadium_Booking_Systerm.Properties.Resources.eye_key;
             this.show_pass_btn.Location = new System.Drawing.Point(827, 355);
             this.show_pass_btn.Name = "show_pass_btn";
             this.show_pass_btn.Size = new System.Drawing.Size(68, 43);
@@ -156,7 +188,7 @@
             // hide_pass_btn
             // 
             this.hide_pass_btn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.hide_pass_btn.Image = global::Stadium_Booking_Systerm.Properties.Resources.Hide;
+            this.hide_pass_btn.Image = global::Stadium_Booking_Systerm.Properties.Resources.eye_hide;
             this.hide_pass_btn.Location = new System.Drawing.Point(827, 355);
             this.hide_pass_btn.Name = "hide_pass_btn";
             this.hide_pass_btn.Size = new System.Drawing.Size(68, 43);
@@ -166,16 +198,18 @@
             this.hide_pass_btn.Visible = false;
             this.hide_pass_btn.Click += new System.EventHandler(this.hide_pass_btn_Click);
             // 
-            // pictureBox3
+            // btn_exite_light
             // 
-            this.pictureBox3.Image = global::Stadium_Booking_Systerm.Properties.Resources.exit;
-            this.pictureBox3.Location = new System.Drawing.Point(858, 25);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(37, 37);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 25;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.btn_exite_light.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_exite_light.Image = global::Stadium_Booking_Systerm.Properties.Resources.cancel_208px2;
+            this.btn_exite_light.Location = new System.Drawing.Point(855, 12);
+            this.btn_exite_light.Name = "btn_exite_light";
+            this.btn_exite_light.Size = new System.Drawing.Size(40, 40);
+            this.btn_exite_light.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btn_exite_light.TabIndex = 25;
+            this.btn_exite_light.TabStop = false;
+            this.btn_exite_light.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.btn_exite_light.MouseHover += new System.EventHandler(this.btn_exite_light_MouseHover);
             // 
             // pictureBox2
             // 
@@ -209,17 +243,19 @@
             // 
             // Form_login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
             this.ClientSize = new System.Drawing.Size(921, 573);
+            this.Controls.Add(this.btn_exite_dark);
             this.Controls.Add(this.textpass);
             this.Controls.Add(this.show_pass_btn);
             this.Controls.Add(this.hide_pass_btn);
             this.Controls.Add(this.lab_login_error);
             this.Controls.Add(this.lab_pass_err);
             this.Controls.Add(this.lab_username_err);
-            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.btn_exite_light);
             this.Controls.Add(this.btnlogin);
             this.Controls.Add(this.textname);
             this.Controls.Add(this.pictureBox2);
@@ -228,11 +264,15 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form_login";
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
+            this.TopMost = true;
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Enter_Key);
+            ((System.ComponentModel.ISupportInitialize)(this.btn_exite_dark)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.show_pass_btn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hide_pass_btn)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_exite_light)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -244,18 +284,21 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private Bunifu.Framework.UI.BunifuElipse bunifuElipse_form;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button btnlogin;
         private System.Windows.Forms.TextBox textpass;
         private System.Windows.Forms.TextBox textname;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.PictureBox btn_exite_light;
         private System.Windows.Forms.Label lab_username_err;
         private System.Windows.Forms.Label lab_pass_err;
         private System.Windows.Forms.Label lab_login_error;
         private System.Windows.Forms.PictureBox hide_pass_btn;
         private System.Windows.Forms.PictureBox show_pass_btn;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse_form;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse2;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse3;
+        private System.Windows.Forms.PictureBox btn_exite_dark;
     }
 }

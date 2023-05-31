@@ -36,12 +36,11 @@ namespace Stadium_Booking_Systerm
             this.Visible = false;
             Form_login f = new Form_login();
             f.ShowDialog();
-            this.Close();
         }
 
         private void timer_motion_Tick(object sender, EventArgs e)
         {
-            int x = panel_picture.Location.X-3, y = panel_picture.Location.Y;
+            int x = panel_picture.Location.X-5, y = panel_picture.Location.Y;
             if(x > 12)
             {
                 panel_picture.Location = new Point(x, y);

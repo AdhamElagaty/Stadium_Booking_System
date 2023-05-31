@@ -45,7 +45,6 @@ D:\Programing\Project\Stadium_Booking_System\Stadium_Booking_System\Stadium Book
 D:\Programing\Project\Stadium_Booking_System\Stadium_Booking_System\Stadium Booking Systerm\bin\Debug\Stadium Booking Systerm.pdb
 D:\Programing\Project\Stadium_Booking_System\Stadium_Booking_System\Stadium Booking Systerm\bin\Debug\Bunifu.UI.WinForms.1.5.3.dll
 D:\Programing\Project\Stadium_Booking_System\Stadium_Booking_System\Stadium Booking Systerm\bin\Debug\Bunifu.UI.WinForms.BunifuCircleProgress.dll
-D:\Programing\Project\Stadium_Booking_System\Stadium_Booking_System\Stadium Booking Systerm\bin\Debug\Bunifu.Licensing.dll
 D:\Programing\Project\Stadium_Booking_System\Stadium_Booking_System\Stadium Booking Systerm\bin\Debug\Bunifu.UI.WinForms.1.5.3.xml
 D:\Programing\Project\Stadium_Booking_System\Stadium_Booking_System\Stadium Booking Systerm\bin\Debug\Bunifu.UI.WinForms.BunifuCircleProgress.xml
 D:\Programing\Project\Stadium_Booking_System\Stadium_Booking_System\Stadium Booking Systerm\obj\Debug\Stadium Booking Systerm.csproj.AssemblyReference.cache
@@ -59,3 +58,58 @@ D:\Programing\Project\Stadium_Booking_System\Stadium_Booking_System\Stadium Book
 D:\Programing\Project\Stadium_Booking_System\Stadium_Booking_System\Stadium Booking Systerm\obj\Debug\Stadium Booking Systerm.csproj.CopyComplete
 D:\Programing\Project\Stadium_Booking_System\Stadium_Booking_System\Stadium Booking Systerm\obj\Debug\Stadium Booking Systerm.exe
 D:\Programing\Project\Stadium_Booking_System\Stadium_Booking_System\Stadium Booking Systerm\obj\Debug\Stadium Booking Systerm.pdb
+D:\Programing\Project\Stadium_Booking_System\Stadium_Booking_System\Stadium Booking Systerm\bin\Debug\Bunifu.UI.WinForms.BunifuGradientPanel.dll
+D:\Programing\Project\Stadium_Booking_System\Stadium_Booking_System\Stadium Booking Systerm\bin\Debug\Bunifu.UI.WinForms.BunifuGradientPanel.xml
+D:\Programing\Project\Stadium_Booking_System\Stadium_Booking_System\Stadium Booking Systerm\bin\Debug\FontAwesome.Sharp.dll
+D:\Programing\Project\Stadium_Booking_System\Stadium_Booking_System\Stadium Booking Systerm\bin\Debug\Bunifu.UI.WinForms.BunifuUserControl.dll
+D:\Programing\Project\Stadium_Booking_System\Stadium_Booking_System\Stadium Booking Systerm\bin\Debug\Bunifu.UI.WinForms.BunifuUserControl.xml
+D:\Programing\Project\Stadium_Booking_System\Stadium_Booking_System\Stadium Booking Systerm\bin\Debug\Bunifu.UI.WinForms.BunifuSeparator.dll
+D:\Programing\Project\Stadium_Booking_System\Stadium_Booking_System\Stadium Booking Systerm\bin\Debug\Bunifu.UI.WinForms.BunifuSeparator.xml
+E:\7\Stadium_Booking_System\Stadium Booking Systerm\bin\Debug\Stadium_System_Data.mdf
+E:\7\Stadium_Booking_System\Stadium Booking Systerm\bin\Debug\Stadium_System_Data_log.ldf
+E:\7\Stadium_Booking_System\Stadium Booking Systerm\bin\Debug\Stadium Booking Systerm.exe.config
+E:\7\Stadium_Booking_System\Stadium Booking Systerm\bin\Debug\Stadium Booking Systerm.exe
+E:\7\Stadium_Booking_System\Stadium Booking Systerm\bin\Debug\Stadium Booking Systerm.pdb
+E:\7\Stadium_Booking_System\Stadium Booking Systerm\bin\Debug\Bunifu.UI.WinForms.BunifuSeparator.dll
+E:\7\Stadium_Booking_System\Stadium Booking Systerm\bin\Debug\Bunifu.UI.WinForms.BunifuUserControl.dll
+E:\7\Stadium_Booking_System\Stadium Booking Systerm\bin\Debug\FontAwesome.Sharp.dll
+E:\7\Stadium_Booking_System\Stadium Booking Systerm\bin\Debug\Bunifu.UI.WinForms.1.5.3.xml
+E:\7\Stadium_Booking_System\Stadium Booking Systerm\bin\Debug\Bunifu.UI.WinForms.BunifuCircleProgress.xml
+E:\7\Stadium_Booking_System\Stadium Booking Systerm\bin\Debug\Bunifu.UI.WinForms.BunifuGradientPanel.xml
+E:\7\Stadium_Booking_System\Stadium Booking Systerm\bin\Debug\Bunifu.UI.WinForms.BunifuSeparator.xml
+E:\7\Stadium_Booking_System\Stadium Booking Systerm\bin\Debug\Bunifu.UI.WinForms.BunifuUserControl.xml
+E:\7\Stadium_Booking_System\Stadium Booking Systerm\obj\Debug\Stadium Booking Systerm.csproj.AssemblyReference.cache
+E:\7\Stadium_Booking_System\Stadium Booking Systerm\obj\Debug\Stadium Booking Systerm.csproj.SuggestedBindingRedirects.cache
+E:\7\Stadium_Booking_System\Stadium Booking Systerm\obj\Debug\Stadium_Booking_Systerm.Form_Loding.resources
+E:\7\Stadium_Booking_System\Stadium Booking Systerm\obj\Debug\Stadium_Booking_Systerm.Form_login.resources
+E:\7\Stadium_Booking_System\Stadium Booking Systerm\obj\Debug\Stadium_Booking_Systerm.Form_Admin.resources
+E:\7\Stadium_Booking_System\Stadium Booking Systerm\obj\Debug\Stadium_Booking_Systerm.Properties.Resources.resources
+E:\7\Stadium_Booking_System\Stadium Booking Systerm\obj\Debug\Stadium Booking Systerm.csproj.GenerateResource.cache
+E:\7\Stadium_Booking_System\Stadium Booking Systerm\obj\Debug\Stadium Booking Systerm.exe.licenses
+E:\7\Stadium_Booking_System\Stadium Booking Systerm\obj\Debug\Stadium Booking Systerm.csproj.CoreCompileInputs.cache
+E:\7\Stadium_Booking_System\Stadium Booking Systerm\obj\Debug\Stadium Booking Systerm.csproj.CopyComplete
+E:\7\Stadium_Booking_System\Stadium Booking Systerm\obj\Debug\Stadium Booking Systerm.exe
+E:\7\Stadium_Booking_System\Stadium Booking Systerm\obj\Debug\Stadium Booking Systerm.pdb
+D:\Programing\Project\Stadium_Booking_System\Stadium_Booking_System\Stadium Booking Systerm\obj\Debug\Stadium_Booking_Systerm.Home.resources
+D:\Programing\Project\Stadium_Booking_System\Stadium_Booking_System\Stadium Booking Systerm\bin\Debug\Bunifu.UI.WinForms.BunifuTextBox.dll
+D:\Programing\Project\Stadium_Booking_System\Stadium_Booking_System\Stadium Booking Systerm\bin\Debug\Bunifu.UI.WinForms.BunifuTextBox.xml
+D:\Programing\Project\Stadium_Booking_System\Stadium_Booking_System\Stadium Booking Systerm\obj\Debug\Stadium_Booking_Systerm.Tickets.resources
+D:\Programing\Project\Stadium_Booking_System\Stadium_Booking_System\Stadium Booking Systerm\bin\Debug\Bunifu.UI.WinForms.BunifuDataGridView.dll
+D:\Programing\Project\Stadium_Booking_System\Stadium_Booking_System\Stadium Booking Systerm\bin\Debug\Bunifu.UI.WinForms.BunifuScrollBar.dll
+D:\Programing\Project\Stadium_Booking_System\Stadium_Booking_System\Stadium Booking Systerm\bin\Debug\Bunifu.UI.WinForms.BunifuDataGridView.xml
+D:\Programing\Project\Stadium_Booking_System\Stadium_Booking_System\Stadium Booking Systerm\bin\Debug\Bunifu.UI.WinForms.BunifuScrollBar.xml
+D:\Programing\Project\Stadium_Booking_System\Stadium_Booking_System\Stadium Booking Systerm\bin\Debug\Bunifu.UI.WinForms.BunifuSlider.dll
+D:\Programing\Project\Stadium_Booking_System\Stadium_Booking_System\Stadium Booking Systerm\bin\Debug\Bunifu.UI.WinForms.BunifuSlider.xml
+D:\Programing\Project\Stadium_Booking_System\Stadium_Booking_System\Stadium Booking Systerm\bin\Debug\Bunifu.UI.WinForms.BunifuImageButton.dll
+D:\Programing\Project\Stadium_Booking_System\Stadium_Booking_System\Stadium Booking Systerm\bin\Debug\Bunifu.UI.WinForms.BunifuImageButton.xml
+D:\Programing\Project\Stadium_Booking_System\Stadium_Booking_System\Stadium Booking Systerm\obj\Debug\Stadium_Booking_Systerm.Stad_seat_Book.resources
+D:\Programing\Project\Stadium_Booking_System\Stadium_Booking_System\Stadium Booking Systerm\bin\Debug\Bunifu.UI.WinForms.BunifuDatePicker.dll
+D:\Programing\Project\Stadium_Booking_System\Stadium_Booking_System\Stadium Booking Systerm\bin\Debug\Bunifu.UI.WinForms.BunifuPictureBox.dll
+D:\Programing\Project\Stadium_Booking_System\Stadium_Booking_System\Stadium Booking Systerm\bin\Debug\Bunifu.UI.WinForms.BunifuDatePicker.xml
+D:\Programing\Project\Stadium_Booking_System\Stadium_Booking_System\Stadium Booking Systerm\bin\Debug\Bunifu.UI.WinForms.BunifuPictureBox.xml
+D:\Programing\Project\Stadium_Booking_System\Stadium_Booking_System\Stadium Booking Systerm\bin\Debug\ComponentFactory.Krypton.Toolkit.dll
+D:\Programing\Project\Stadium_Booking_System\Stadium_Booking_System\Stadium Booking Systerm\bin\Debug\ComponentFactory.Krypton.Toolkit.pdb
+D:\Programing\Project\Stadium_Booking_System\Stadium_Booking_System\Stadium Booking Systerm\obj\Debug\Stadium_Booking_Systerm.Match.resources
+D:\Programing\Project\Stadium_Booking_System\Stadium_Booking_System\Stadium Booking Systerm\obj\Debug\Stadium_Booking_Systerm.Mange.resources
+D:\Programing\Project\Stadium_Booking_System\Stadium_Booking_System\Stadium Booking Systerm\obj\Debug\Stadium_Booking_Systerm.Add_account.resources
+D:\Programing\Project\Stadium_Booking_System\Stadium_Booking_System\Stadium Booking Systerm\obj\Debug\Stadium_Booking_Systerm.Main_Form.resources
