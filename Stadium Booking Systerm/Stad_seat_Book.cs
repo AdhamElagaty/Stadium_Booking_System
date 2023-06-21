@@ -19,6 +19,7 @@ namespace Stadium_Booking_Systerm
         private string x = "";
         private int num_of_seats = 0, price = 132, Ticket_price = 0;
         public string username;
+        private bool check_book = true;
         public Stad_seat_Book()
         {
             InitializeComponent();
@@ -156,14 +157,15 @@ namespace Stadium_Booking_Systerm
             Button button = (Button)sender;
             if (button.BackColor != Color.FromArgb(255, 192, 192))
             {
-                if (button.BackColor != Color.FromArgb(192, 255, 192))
+                if (button.BackColor != Color.FromArgb(192, 255, 192) && check_book)
                 {
                     button.BackColor = Color.FromArgb(192, 255, 192);
                     x += "," + button.Name.Remove(0, 6) + " ";
                     num_of_seats++;
                     Ticket_price += price;
+                    check_book = false;
                 }
-                else
+                else if(!check_book && button.BackColor == Color.FromArgb(192,255,192))
                 {
                     button.BackColor = Color.Gray;
                     if (x != "")
@@ -172,6 +174,7 @@ namespace Stadium_Booking_Systerm
                         num_of_seats--;
                         Ticket_price -= price;
                     }
+                    check_book = true;
                 }
                 label4.Text = num_of_seats.ToString();
                 label6.Text = Ticket_price.ToString("c");
