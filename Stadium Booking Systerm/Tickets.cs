@@ -33,7 +33,7 @@ namespace Stadium_Booking_Systerm
             dt = ticket.view_All_ticket();
             for (int i = 0; i < dt.Rows.Count; i++)
             {
-                dataGridView1.Rows.Add(imageList1.Images[0], dt.Rows[i]["Id"].ToString(), dt.Rows[i]["Name"].ToString(), dt.Rows[i]["Teams_name"].ToString(), dt.Rows[i]["Match_Date"].ToString(), dt.Rows[i]["Number_of_Seats"].ToString(), dt.Rows[i]["Booking_Date"].ToString(), dt.Rows[i]["Price"].ToString(), dt.Rows[i]["Employee_Name"].ToString());
+                dataGridView1.Rows.Add(imageList1.Images[0], dt.Rows[i]["Id"].ToString(), dt.Rows[i]["Name"].ToString(), dt.Rows[i]["Teams_name"].ToString(), dt.Rows[i]["Match_Date"].ToString(), dt.Rows[i]["Booking_Date"].ToString(), dt.Rows[i]["Employee_Name"].ToString());
             }
             if (dataGridView1.RowCount > 14)
             {
@@ -101,7 +101,7 @@ namespace Stadium_Booking_Systerm
                     Clear_data_gride_view();
                     for (int i = 0; i < dt.Rows.Count; i++)
                     {
-                        dataGridView1.Rows.Add(imageList1.Images[0], dt.Rows[i]["Id"].ToString(), dt.Rows[i]["Name"].ToString(), dt.Rows[i]["Teams_name"].ToString(), dt.Rows[i]["Match_Date"].ToString(), dt.Rows[i]["Number_of_Seats"].ToString(), dt.Rows[i]["Booking_Date"].ToString(), dt.Rows[i]["Price"].ToString(), dt.Rows[i]["Employee_Name"].ToString());
+                        dataGridView1.Rows.Add(imageList1.Images[0], dt.Rows[i]["Id"].ToString(), dt.Rows[i]["Name"].ToString(), dt.Rows[i]["Teams_name"].ToString(), dt.Rows[i]["Match_Date"].ToString(), dt.Rows[i]["Booking_Date"].ToString(), dt.Rows[i]["Employee_Name"].ToString());
                     }
                     dataGridView1.ClearSelection();
                 }
@@ -153,6 +153,13 @@ namespace Stadium_Booking_Systerm
         {
             dataGridView1.ClearSelection();
             iconButton2.Visible = false;
+        }
+        public void Enter_Key(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Return)
+            {
+                bunifuImageButton1_Click(sender, e);
+            }
         }
     }
 }

@@ -200,7 +200,7 @@ namespace Stadium_Booking_Systerm
             try
             {
                 cn.Open();
-                string Query = "select Ticket.Id , Ticket.Name , Matches.Teams_name , Matches.Match_Date , Ticket.Number_of_Seats , Ticket.Booking_Date , Ticket.Price ,CONCAT(Account.Firste_Name , ' ' , Account.Second_Name) AS Employee_Name from Ticket , Matches , Account where Ticket.Match_ID=Matches.Id AND Ticket.Employee_username=Account.UserName";
+                string Query = "select Ticket.Id , Ticket.Name , Matches.Teams_name , Matches.Match_Date , Ticket.Booking_Date ,CONCAT(Account.Firste_Name , ' ' , Account.Second_Name) AS Employee_Name from Ticket , Matches , Account where Ticket.Match_ID=Matches.Id AND Ticket.Employee_username=Account.UserName";
                 SqlCommand cmd = new SqlCommand(Query, cn);
                 SqlDataAdapter sda = new SqlDataAdapter(cmd);
                 DataTable dt = new DataTable();
@@ -221,7 +221,7 @@ namespace Stadium_Booking_Systerm
             try
             {
                 cn.Open();
-                string Query = "select Ticket.Id , Ticket.Name , Matches.Teams_name , Matches.Match_Date , Ticket.Number_of_Seats , Ticket.Booking_Date , Ticket.Price ,CONCAT(Account.Firste_Name , ' ' , Account.Second_Name) AS Employee_Name from Ticket , Matches , Account where Ticket.Match_ID=Matches.Id AND Ticket.Employee_username=Account.UserName AND Ticket.Id = " + sid;
+                string Query = "select Ticket.Id , Ticket.Name , Matches.Teams_name , Matches.Match_Date , Ticket.Booking_Date ,CONCAT(Account.Firste_Name , ' ' , Account.Second_Name) AS Employee_Name from Ticket , Matches , Account where Ticket.Match_ID=Matches.Id AND Ticket.Employee_username=Account.UserName AND Ticket.Id = " + sid;
                 SqlCommand cmd = new SqlCommand(Query, cn);
                 SqlDataAdapter sda = new SqlDataAdapter(cmd);
                 DataTable dt = new DataTable();
