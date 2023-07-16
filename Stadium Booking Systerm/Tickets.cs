@@ -81,11 +81,15 @@ namespace Stadium_Booking_Systerm
         }
         private void iconButton1_Click(object sender, EventArgs e)
         {
-            Stad_seat_Book stad_Seat_Book = new Stad_seat_Book();
-            Stad_seat_Book.Instance.set_username(username);
-            Clear_data_gride_view();
-            stad_Seat_Book.ShowDialog();
-            Refresh_Data();
+            Mange_Matche mange_Matche = new Mange_Matche();
+            if (mange_Matche.get_next_match())
+            {
+                Stad_seat_Book stad_Seat_Book = new Stad_seat_Book();
+                Stad_seat_Book.Instance.set_username(username);
+                Clear_data_gride_view();
+                stad_Seat_Book.ShowDialog();
+                Refresh_Data();
+            }
         }
         private void bunifuImageButton1_Click(object sender, EventArgs e)
         {

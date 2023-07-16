@@ -34,7 +34,10 @@ namespace Stadium_Booking_Systerm
             label1.Text = DateTime.Now.ToString("T");
             account.set_UserName(username);
             account.get_Employee_info();
-            mange_Matche.get_next_match();
+            if (!mange_Matche.get_next_match())
+            {
+                this.Close();
+            }
             pictureBox4.Image = Image.FromFile(mange_Matche.Team1_pic_dis);
             pictureBox3.Image = Image.FromFile(mange_Matche.Team2_pic_dis);
             label3.Text = mange_Matche.Match_date_time.ToString();
