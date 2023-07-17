@@ -82,6 +82,7 @@ namespace Stadium_Booking_Systerm
             if (textphonenumber.Text == "")
             {
                 textphonenumber.Text = "Phone Number";
+                textphonenumber.ForeColor = Color.Gray;
             }
         }
         private void textphonenumber_Enter(object sender, EventArgs e)

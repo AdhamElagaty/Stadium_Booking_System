@@ -385,7 +385,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Main_Form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form3";
+            this.Text = "Stadium";
             this.Load += new System.EventHandler(this.Form_Admin_Load);
             this.mainpanel.ResumeLayout(false);
             this.mainpanel.PerformLayout();

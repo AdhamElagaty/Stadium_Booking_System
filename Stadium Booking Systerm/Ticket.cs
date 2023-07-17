@@ -239,7 +239,11 @@ namespace Stadium_Booking_Systerm
         private string Delate_seats_from_match(string z, string m)
         {
             string w = "";
-            if(z.IndexOf(m) + m.Length == z.Length)
+            if (z == m)
+            {
+                w = null;
+            }
+            else if (z.IndexOf(m) + m.Length == z.Length)
             {
                 w = z.Replace("," + m, "");
             }

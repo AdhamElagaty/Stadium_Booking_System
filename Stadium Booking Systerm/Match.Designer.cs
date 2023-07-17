@@ -516,11 +516,12 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Plus Jakarta Sans", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(139)))), ((int)(((byte)(86)))));
-            this.label1.Location = new System.Drawing.Point(707, 79);
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.label1.Font = new System.Drawing.Font("Plus Jakarta Sans", 60F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(90)))), ((int)(((byte)(90)))));
+            this.label1.Location = new System.Drawing.Point(746, 79);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(409, 155);
+            this.label1.Size = new System.Drawing.Size(514, 193);
             this.label1.TabIndex = 26;
             this.label1.Text = "Matchs";
             this.label1.Visible = false;
